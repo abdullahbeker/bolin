@@ -1,0 +1,26 @@
+.overlay {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #3d3d3d;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    height: 4rem;
+  }
+
+  &__input {
+    width: 30rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 4rem;
+    color: white;
+  }
+}

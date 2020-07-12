@@ -4,9 +4,7 @@ const http = require('http').createServer(app)
 const io = require('socket.io')(http)
 const path = require('path')
 
-io.on('connection', client => {
-  console.log('A client connected')
-})
+io.on('connection', client => {})
 
 app.use(express.static(path.resolve(__dirname, 'assets', 'dist')))
 

@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #4b4b4b;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  font-family: 'Inconsolata', sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+::placeholder {
+  color: white;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}

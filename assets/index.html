@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bolin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/main.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="overlay" id="overlay">
+      <form class="overlay__form" id="overlay__form" autocomplete="off">
+        <input type="text" class="overlay__input" id="overlay__input" autofocus placeholder="enter nickname" autocomplete="off" />
+        <button class="visually-hidden" type="submit"></button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="/main.js"></script>
+  </body>
 </html>
