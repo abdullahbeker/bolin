@@ -14,7 +14,17 @@
         <button class="visually-hidden" type="submit"></button>
       </form>
     </div>
-
+    <div class="content">
+      <div class="content__screen">
+        <ul class="content__screen__messages" id="content__screen__messages"></ul>
+      </div>
+      <div class="content__send">
+        <form id="content__send__form" class="content__send__form" autocomplete="off">
+          <input type="text" class="content__send__input" id="content__send__input" />
+          <button class="content__send__button">Send</button>
+        </form>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
     <script src="/main.js"></script>
