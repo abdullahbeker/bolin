@@ -3,11 +3,15 @@ const HotModuleReplacementPlugin = require('webpack').HotModuleReplacementPlugin
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const AutoPrefixer = require('autoprefixer')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   plugins: [new HotModuleReplacementPlugin(), new MiniCssExtractPlugin(), new CleanWebpackPlugin()],
-  mode: 'development',
-  watch: true,
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
+  mode: 'production',
   entry: path.resolve(__dirname, 'assets', 'main.js'),
   output: {
     path: path.resolve(__dirname, 'assets', 'dist'),

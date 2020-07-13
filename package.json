@@ -4,7 +4,10 @@
   "description": "express and socket.io chatting app",
   "main": "server.js",
   "scripts": {
-    "dev": "concurrently \"webpack\" \"nodemon server.js\""
+    "dev": "concurrently \"webpack\" \"nodemon server.js\"",
+    "build": "webpack",
+    "start": "node server.js",
+    "all": "npm run build & npm run start"
   },
   "keywords": [],
   "author": "Abdullah Beker (github.com/abdullahbeker)",
