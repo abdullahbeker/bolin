@@ -1,0 +1,24 @@
+.message {
+  display: inline-block;
+  min-width: 15rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #f5f6fa;
+  color: black;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+  &__head {
+    font-size: 1rem;
+  }
+
+  &__body {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__foot {
+    float: right;
+    font-size: 0.8rem;
+  }
+}

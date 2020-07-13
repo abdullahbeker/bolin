@@ -6,12 +6,18 @@ const path = require('path')
 
 io.on('connection', client => {
   client.on('newMessage', data => {
-    data.at = new Date().toLocaleString()
+    const date = new Date()
+    data.at = `${date.getHours()}:${date.getMinutes()}`
     io.sockets.emit('newMessage', data)
   })
 
   setInterval(() => {
-    client.emit('newMessage', { who: 'Server', what: `current server time is ${new Date().toLocaleString()}`, at: new Date().toLocaleString() })
+    const date = new Date()
+    client.emit('newMessage', {
+      who: 'Server',
+      what: `current server time is ${new Date().toLocaleString()}`,
+      at: `${date.getHours()}:${date.getMinutes()}`,
+    })
   }, 5000)
 })
 
